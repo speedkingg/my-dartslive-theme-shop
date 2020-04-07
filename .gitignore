@@ -12,4 +12,3 @@ db/img
 
 web/firebase-debug.log
 web/.firebase
-web/src/config/config.js
