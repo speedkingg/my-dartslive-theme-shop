@@ -1,0 +1,15 @@
+set_env.sh
+.vscode
+
+
+scraping/utils/__pycache__
+scraping/define/__pycache__
+scraping/config/__pycache__
+
+db/db.json
+db/img
+
+
+web/firebase-debug.log
+web/.firebase
+web/src/config/config.js
