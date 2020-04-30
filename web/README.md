@@ -22,8 +22,7 @@
 
 1. `firebase`の`Authentication`で、ログイン プロバイダ：`メール / パスワード`を許可する
    - ユーザを作成しておく（ログインに使用する）
-2. `firebase`の`Database`で、`Realtime Database`を作成する
-   - rule を設定する
+2. `Realtime Database`の rule を設定する（DB は自動で作成される）
 
 ```
 $ firebase deploy --only database
