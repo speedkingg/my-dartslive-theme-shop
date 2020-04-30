@@ -1,3 +1,13 @@
 {
-  "rules": {}
+  "rules": {
+    "theme": {
+      ".read": "auth != null",
+      ".write": false,
+      ".indexOn": ["price", "can_buy", "theme_name", "id"]
+    },
+    "user": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    }
+  }
 }

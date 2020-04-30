@@ -23,22 +23,10 @@
 1. `firebase`の`Authentication`で、ログイン プロバイダ：`メール / パスワード`を許可する
    - ユーザを作成しておく（ログインに使用する）
 2. `firebase`の`Database`で、`Realtime Database`を作成する
-   - rule を下記のように設定する
+   - rule を設定する
 
 ```
-{
-"rules": {
-  "theme": {
-      ".read": "auth != null",
-      ".write": false,
-      ".indexOn": ["price", "can_buy", "theme_name", "id"]
-  },
-    "user": {
-      ".read": "auth != null",
-      ".write": "auth != null"
-  }
-}
-}
+$ firebase deploy --only database
 ```
 
 3. `firebase`の`Storage`直下に`/dartslive_theme`を作成し、`src/assets/img`配下の画像をアップロードする
